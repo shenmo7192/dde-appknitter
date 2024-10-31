@@ -1,6 +1,6 @@
 #!/bin/bash
 #GETTING SYSTEM LANGUAGE
-LANG=$(locale | grep LANGUAGE | cut -d= -f2 | cut -d_ -f1)
+LANG=$(echo ${LANG%.*} | cut -d= -f2 | cut -d_ -f1)
 #TRANSLATION VARIABLES
 #Titles
 #---Name Request Window
